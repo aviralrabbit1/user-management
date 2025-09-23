@@ -50,6 +50,19 @@ Setup
   <link href="/src/style.css" rel="stylesheet">
   ```
 
+- Install Material UI
+  ```sh
+  bun add @mui/material @emotion/react @emotion/styled
+  ```
+
+- Install google fonts inside project's `<head />` tag:
+  ```js
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+  />
+  ```
+
 </details>
 
 </details>
