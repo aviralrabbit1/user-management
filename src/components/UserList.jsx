@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect, useCallback } from "react"
 import { fetchUsers } from "../lib/api"
+import Box from '@mui/material/Box';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -8,6 +9,8 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import CircularProgress from '@mui/material/CircularProgress';
+import Typography from '@mui/material/Typography';
 
 
 const UserList = () => {
@@ -36,7 +39,13 @@ const UserList = () => {
   return (
     <div className="bg-card p-6 rounded-lg shadow-md">
 
-      {loading && <p className="text-center">Loading users...</p>}
+      {loading && 
+        <Box className="text-center">
+          <CircularProgress color="success" size={60}/>
+          <Typography variant="h3" gutterBottom>
+            Loading users...
+          </Typography>
+        </Box>}
       {error && <p className="text-center text-destructive">{error}</p>}
 
       {!loading && !error && (
