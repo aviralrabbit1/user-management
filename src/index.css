@@ -6,13 +6,22 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --background: #f2f2f2;
+  --text-primary: #0f0f0f;
+  --text-secondary: #4e4e4e;
+  --accent: #dfb017;
+  --accent-hover: #cea315; 
+  --border: #1f1e1e;
+  --shadow: 7px 15px 13px -4px #00000056;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 a {
@@ -30,6 +39,26 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #dadada;
+  color: #1f2023;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --color-light: #1f2023;
+    --color-dark: #fafafa;
+  }
+}
+
+header {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {

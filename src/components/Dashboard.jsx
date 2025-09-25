@@ -3,9 +3,9 @@ import UserList from './UserList'
 
 const Dashboard = () => {
   return (
-    <>
+    <main>
       <UserList/>
-    </>
+    </main>
   )
 }
 
