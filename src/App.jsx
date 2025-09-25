@@ -1,14 +1,19 @@
 import './App.css'
 import Button from '@mui/material/Button';
+import { Box, Container, Stack} from '@mui/material';
+import Dashboard from './components/Dashboard';
 
 function App() {
 
   return (
     <>
-      <h1 class="text-3xl font-bold underline">
+      <header >
         User Management
-      </h1>
-      <Button variant="contained">Contained</Button>
+      </header>
+      <Dashboard />
+      <footer>
+        Created by Aviral Verma © 2025
+      </footer>    
     </>
   )
 }

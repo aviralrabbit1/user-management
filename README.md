@@ -63,6 +63,20 @@ Setup
   />
   ```
 
+  or
+  ```sh
+  bun add @fontsource/roboto
+  ```
+
 </details>
 
+
+<details>
+<summary>
+3. Mock Data
+</summary>
+
+- Create a service in `lib/api.ts` to fetch data from `/users` endpoint from [Jsonplaceholder](https://jsonplaceholder.typicode.com/users). Export it and call it in  `UserList.jsx`.
+
+</Details>
 </details>
